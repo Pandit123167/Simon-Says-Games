@@ -17,6 +17,15 @@ let userSeq = [];
     }
  });
 
+ document.addEventListener("mousedown",function(){
+    if(started == false){
+        console.log("game started");
+        started = true;
+
+        levelUp();
+    }
+ });
+
  function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
